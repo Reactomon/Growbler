@@ -194,6 +194,11 @@ p {
   color: black;
 }
 
+.divider {
+  border: 0.5px solid #666;
+  margin: 1rem 0;
+}
+
 .gradient-text {
   background: linear-gradient(135deg, #1a1a1a 0%, #666 100%);
   -webkit-background-clip: text;
@@ -598,6 +603,10 @@ p {
 .body-center {
   display: flex;
   justify-content: center;
+}
+
+.body-center.a {
+  max-width: 200px;
 }
 
 /* Page Header */

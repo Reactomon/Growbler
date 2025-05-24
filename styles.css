@@ -212,7 +212,7 @@ p {
 
 .hero-graphic {
     position: relative;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,16 +255,20 @@ p {
 }
 
 .card-3 {
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 55%;
     animation-delay: 2s;
 }
 
 .card-4 {
-    bottom: 10px;
-    left: 20%;
-    transform: translateX(-20%);
+    bottom: 40px;
+    left: 5%;
+    animation-delay: 2s;
+}
+
+.card-5 {
+    bottom: 70px;
+    right: 0;
     animation-delay: 2s;
 }
 
@@ -435,6 +439,7 @@ p {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .contact-item i {
@@ -568,6 +573,12 @@ p {
 .footer-bottom p {
     color: #999;
     margin: 0;
+}
+
+/* Generic */
+.body-center {
+    display: flex;
+    justify-content: center;
 }
 
 /* Page Header */
@@ -948,6 +959,7 @@ p {
     50% { transform: scale(1.05); }
 }
 
+
 /* Values Section */
 .values-section {
     padding: 80px 0;
@@ -1073,7 +1085,8 @@ p {
 .commitment-item {
     display: flex;
     gap: 1rem;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 1.5rem;
     background: #f8f9fa;
     border-radius: 12px;

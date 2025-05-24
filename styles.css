@@ -77,13 +77,14 @@ p {
 
 .btn-secondary {
     background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: black;
+    border: 2px solid black;
 }
 
 .btn-secondary:hover {
     background: #667eea;
     color: white;
+    border: 2px solid #667eea;
     transform: translateY(-2px);
 }
 
@@ -185,11 +186,11 @@ p {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: black;
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #1a1a1a 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #666 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -437,7 +438,7 @@ p {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 }
 
 .contact-item i {
@@ -526,6 +527,17 @@ p {
     gap: 1rem;
     margin-top: 1rem;
 }
+
+.mail {
+    text-decoration: none;
+    color: white
+}
+
+.mail-section {
+    text-decoration: none;
+    color: #666
+}
+
 
 .social-links a {
     width: 40px;

@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Service Category Filtering
     const categoryTabs = document.querySelectorAll('.tab-btn');
-    const serviceCards = document.querySelectorAll('.service-detail-card');
+    const serviceCards = document.querySelectorAll('.section-block');
 
     if (categoryTabs.length > 0 && serviceCards.length > 0) {
         categoryTabs.forEach(tab => {

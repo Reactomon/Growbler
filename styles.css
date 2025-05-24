@@ -903,13 +903,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 600px;
 }
 
 .vision-elements {
     position: relative;
     width: 250px;
-    height: 250px;
+    height: 400px;
 }
 
 .vision-element {
@@ -944,7 +944,7 @@ p {
 }
 
 .element-2 {
-    top: 50%;
+    top: 37%;
     right: 0;
     transform: translateY(-50%);
     animation-delay: 0.5s;

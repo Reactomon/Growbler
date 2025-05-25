@@ -115,13 +115,31 @@ p {
 }
 
 .nav-logo h2 {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea, #764ba2, #667eea);
+  background-size: 200% 200%; /* Makes room for animation */
+  background-position: 0% 50%;
+  animation: gradientShift 5s ease infinite;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
+
   margin: 0;
   font-size: 1.5rem;
   font-family: "FontAwesome";
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .nav-menu {
@@ -172,7 +190,7 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("./assets/hero-bg-1.png") no-repeat center center fixed;
+  background: url("./assets/bg-new.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -192,7 +210,7 @@ p {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .divider {
@@ -201,16 +219,16 @@ p {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #1a1a1a 0%, #666 100%);
+  /* background: linear-gradient(135deg, #aaa 0%, #fff 100%); */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   background-clip: text;
 }
 
 .hero-description {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: black;
+  color: white;
   line-height: 1.7;
 }
 
@@ -226,6 +244,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-override {
+  border: 1px solid white;
+  color: white;
 }
 
 .floating-card {
@@ -1432,6 +1455,10 @@ html {
   border-radius: 50%;
   border: 1px solid black;
   padding: 1px;
+}
+
+.small {
+  text-transform: lowercase !important;
 }
 
 .member-overlay {

@@ -436,7 +436,8 @@ p {
 /* Stats Section */
 .stats {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: url('./assets/bg-new.jpg');
   color: white;
 }
 
@@ -1501,6 +1502,7 @@ html {
   align-items: center;
   justify-content: center;
   color: #667eea;
+  border: 3px solid #667eea;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
@@ -1687,7 +1689,8 @@ html {
 /* Team CTA */
 .team-cta {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: url('./assets/bg-new.jpg');
   color: white;
   text-align: center;
 }

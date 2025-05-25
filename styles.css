@@ -305,6 +305,12 @@ p {
   animation-delay: 2s;
 }
 
+.card-8 {
+  top: 0;
+  left: 40%;
+  animation-delay: 2s;
+}
+
 @keyframes float {
   0%,
   100% {

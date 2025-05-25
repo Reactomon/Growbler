@@ -1,9 +1,29 @@
 // Mobile Navigation Toggle
 document.addEventListener("DOMContentLoaded", function () {
   (function () {
-    emailjs.init("service_shh383u"); // Replace with your actual public key
+    window.addEventListener("scroll", playOnScroll);
+    window.addEventListener("click", playOnScroll);
+    window.addEventListener("mousemove", playOnScroll);
+    window.addEventListener("keydown", playOnScroll);
+    window.addEventListener("touchstart", playOnScroll);
+    function playOnScroll() {
+      console.log("Scroll detected");
+      const sound = document.getElementById("welcomeSound");
+      sound.playbackRate = 1.8; // 40% faster
+      sound
+        .play()
+        .then((_) => {
+          window.removeEventListener("scroll", playOnScroll);
+          window.removeEventListener("click", playOnScroll);
+          window.removeEventListener("mousemove", playOnScroll);
+          window.removeEventListener("keydown", playOnScroll);
+          window.removeEventListener("touchstart", playOnScroll);
+        })
+        .catch((e) => {
+          console.log("Playback failed:", e);
+        });
+    }
   })();
-
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-menu");
 

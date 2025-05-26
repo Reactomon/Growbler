@@ -190,7 +190,7 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("./assets/bg-new.jpg") no-repeat center center fixed;
+  background: url("./assets/bg-const.png") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -266,7 +266,7 @@ p {
 
 .floating-card i {
   font-size: 1.5rem;
-  color: #667eea;
+  color: navy;
 }
 
 .floating-card span {
@@ -437,7 +437,7 @@ p {
 .stats {
   padding: 80px 0;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-  background: url('./assets/bg-new.jpg');
+  background: url('./assets/bg-const.png');
   color: white;
 }
 
@@ -644,7 +644,7 @@ p {
 .page-header {
   padding: 120px 0 60px;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-  background: url('./assets/bg-new.jpg');
+  background: url('./assets/bg-const.png');
   color: white;
   text-align: center;
 }
@@ -1202,7 +1202,7 @@ p {
 .mission-cta {
   padding: 80px 0;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-  background: url('./assets/bg-new.jpg');
+  background: url('./assets/bg-const.png');
   color: white;
   text-align: center;
 }
@@ -1690,7 +1690,7 @@ html {
 .team-cta {
   padding: 80px 0;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-  background: url('./assets/bg-new.jpg');
+  background: url('./assets/bg-const.png');
   color: white;
   text-align: center;
 }

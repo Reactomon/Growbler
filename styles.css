@@ -269,6 +269,37 @@ p {
   color: navy;
 }
 
+.tel {
+  color: inherit;
+  text-decoration: none;
+}
+
+.phone-icon {
+  font-size: 2rem;
+  margin: 2rem;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  animation: buzz 0.2s infinite;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
+@keyframes buzz {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.phone-icon i {
+    margin-left: 0.5rem;
+}
+
 .floating-card span {
   font-size: 0.9rem;
   font-weight: 500;
